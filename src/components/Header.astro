@@ -1,0 +1,62 @@
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+<header>
+    <h1>¡Hola! Soy</h1>
+    <h2>Facundo Nicolás <br> García Zárate</h2>
+    <h3>
+        <p><span class="underline">Estudiante</span> de Lic. en Sistemas y
+        <span class="autodidacta">autodidacta</span>.</p>
+    </h3>
+</header>
+
+<style>
+
+    header {
+        font-size: 2rem;
+        letter-spacing: -0.109rem;
+        text-align: center;
+        font-weight: 700;
+        color:#d1d5db;
+        line-height: 133%;
+        background-color: ;
+        user-select: none;
+        font-family: "General Sans", sans-serif;
+        transition: all 0.3s;
+        overflow: hidden;
+    }
+
+    h2 {
+        color: transparent;
+        -webkit-text-stroke: 0.1rem #d1d5db;
+        transform: skew(-2deg);
+        transition: all 0.3s ease;
+        font-family: 'Eudoxus Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    h2:hover {
+        transform: skew(-2deg) scale(1.1) translateY(-0.109rem);
+        color: #e5e7eb;
+        text-shadow: 0 0 5rem #e5e7eb;
+    }
+
+    .autodidacta {
+        color:#7c3aed;
+    }
+
+    .underline {
+        position: relative;
+    }
+
+    .underline::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        border-top: solid 3px red;
+        left: 0;
+        bottom: -10px;
+        border-radius: 50%;
+        height: 9px;
+    }
+
+</style>

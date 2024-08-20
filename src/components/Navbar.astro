@@ -1,0 +1,90 @@
+---
+import ThemeIcon from "./Icons.astro";
+---
+
+<head>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap">
+  <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+</head>
+
+<nav class="absolute top-8 right-8 z-50 flex justify-end">
+  <ul class="flex gap-4 font-500 text-[#d1d5db]">
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+      <a
+        href="https://www.linkedin.com/in/facugazar"
+        target="_blank"
+        aria-label="Linkedin"
+      >
+        <span class="iconify" data-icon="mdi:linkedin" class="block sm:hidden h-6 w-6"></span>
+        <span class="hidden sm:block">Linkedin</span>
+      </a>
+    </li>
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+      <a
+        href="mailto:facundobarciabarate@gmail.com"
+        target="_blank"
+        aria-label="Email"
+      >
+        <span class="iconify" data-icon="mdi:email" class="block sm:hidden h-6 w-6"></span>
+        <span class="hidden sm:block">Email</span>
+      </a>
+    </li>
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+      <a href="https://x.com/FacuZagar" target="_blank" aria-label="Twitter">
+        <span class="iconify" data-icon="mdi:twitter" class="block sm:hidden h-6 w-6"></span>
+        <span class="hidden sm:block">Twitter</span>
+      </a>
+    </li>
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+      <a href="http://github.com/FacundoGazar" target="_blank" aria-label="Github">
+        <span class="iconify" data-icon="mdi:github" class="block sm:hidden h-6 w-6"></span>
+        <span class="hidden sm:block">Github</span>
+      </a>
+    </li>
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;"><ThemeIcon /></li>
+  </ul>
+</nav>
+
+<style>
+  li {
+    transition: all 0.2s ease;
+  }
+
+  li:hover {
+    transform-origin: bottom left;
+    transform: rotate(5deg);
+  }
+
+  nav {
+    top: 8px;
+    right: 8px;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px; /* Espacio entre los iconos */
+  }
+
+  /* Quitar subrayado y aplicar la fuente */
+  a {
+    text-decoration: none; /* Sin subrayado */
+    font-family: 'General Sans', sans-serif; /* Aplicar la fuente General Sans */
+  }
+
+  /* Para asegurarte de que el color y la fuente funcionen en todos los estados */
+  a:link, a:visited {
+    color: #d1d5db;
+  }
+
+  a:hover {
+    color: #d1d5db; /* Color de hover */
+    text-shadow: 0 0 1rem #d1d5db;
+  }
+
+  @media (max-width: 640px) {
+    nav {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+</style>

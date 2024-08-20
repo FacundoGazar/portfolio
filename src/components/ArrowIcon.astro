@@ -1,0 +1,52 @@
+---
+---
+<script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+<div class="down-arrow pointer hidden sm:block">
+  <a href="#projects" aria-label="Go to cards">
+    <span class="iconify" data-icon="mdi:arrow-down-box" style="color: rgb(188, 11, 211);"></span>
+  </a>
+</div>
+
+<style>
+  .down-arrow {
+    width: fit-content;
+    margin: 3rem auto;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    transition: all 0.2s ease;
+  }
+
+  .down-arrow:hover {
+    opacity: 0.5;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(10px);
+    }
+
+    60% {
+      transform: translateY(5px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .down-arrow {
+      position: absolute;
+      inset: -2rem;
+      margin-top: auto;
+      height: fit-content;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+      transition: all 0.2s ease;
+    }
+  }
+</style>
