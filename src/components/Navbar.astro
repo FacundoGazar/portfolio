@@ -58,22 +58,20 @@ import ThemeIcon from "./Icons.astro";
 
   ul {
     display: flex;
-    gap: 16px; /* Espacio entre los iconos */
+    gap: 16px;
   }
 
-  /* Quitar subrayado y aplicar la fuente */
   a {
-    text-decoration: none; /* Sin subrayado */
-    font-family: 'General Sans', sans-serif; /* Aplicar la fuente General Sans */
+    text-decoration: none;
+    font-family: 'General Sans', sans-serif;
   }
 
-  /* Para asegurarte de que el color y la fuente funcionen en todos los estados */
   a:link, a:visited {
     color: #d1d5db;
   }
 
   a:hover {
-    color: #d1d5db; /* Color de hover */
+    color: #d1d5db;
     text-shadow: 0 0 1rem #d1d5db;
   }
 
@@ -86,12 +84,12 @@ import ThemeIcon from "./Icons.astro";
     }
 
     ul {
-      flex-direction: column; /* Apilar ítems en pantallas pequeñas */
+      flex-direction: column;
       align-items: center;
     }
 
     li {
-      margin-bottom: 8px; /* Espacio entre ítems apilados */
+      margin-bottom: 8px;
     }
   }
 </style>
