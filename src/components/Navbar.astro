@@ -7,16 +7,16 @@ import ThemeIcon from "./Icons.astro";
   <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 </head>
 
-<nav class="absolute top-8 right-8 z-50 flex justify-end">
-  <ul class="flex gap-4 font-500 text-[#d1d5db]">
+<nav class="fixed top-4 right-4 z-50 flex flex-col md:flex-row justify-end items-center">
+  <ul class="flex flex-col md:flex-row gap-4 font-500 text-[#d1d5db]">
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
       <a
         href="https://www.linkedin.com/in/facugazar"
         target="_blank"
         aria-label="Linkedin"
       >
-        <span class="iconify" data-icon="mdi:linkedin" class="block sm:hidden h-6 w-6"></span>
-        <span class="hidden sm:block">Linkedin</span>
+        <span class="iconify" data-icon="mdi:linkedin" class="block md:hidden h-6 w-6"></span>
+        <span class="hidden md:block">Linkedin</span>
       </a>
     </li>
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
@@ -25,23 +25,19 @@ import ThemeIcon from "./Icons.astro";
         target="_blank"
         aria-label="Email"
       >
-        <span class="iconify" data-icon="mdi:email" class="block sm:hidden h-6 w-6"></span>
-        <span class="hidden sm:block">Email</span>
-      </a>
-    </li>
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
-      <a href="https://x.com/FacuZagar" target="_blank" aria-label="Twitter">
-        <span class="iconify" data-icon="mdi:twitter" class="block sm:hidden h-6 w-6"></span>
-        <span class="hidden sm:block">Twitter</span>
+        <span class="iconify" data-icon="mdi:email" class="block md:hidden h-6 w-6"></span>
+        <span class="hidden md:block">Email</span>
       </a>
     </li>
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
       <a href="http://github.com/FacundoGazar" target="_blank" aria-label="Github">
-        <span class="iconify" data-icon="mdi:github" class="block sm:hidden h-6 w-6"></span>
-        <span class="hidden sm:block">Github</span>
+        <span class="iconify" data-icon="mdi:github" class="block md:hidden h-6 w-6"></span>
+        <span class="hidden md:block">Github</span>
       </a>
     </li>
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;"><ThemeIcon /></li>
+    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+      <ThemeIcon />
+    </li>
   </ul>
 </nav>
 
@@ -83,8 +79,19 @@ import ThemeIcon from "./Icons.astro";
 
   @media (max-width: 640px) {
     nav {
+      top: 4px;
+      right: 4px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    ul {
+      flex-direction: column; /* Apilar ítems en pantallas pequeñas */
+      align-items: center;
+    }
+
+    li {
+      margin-bottom: 8px; /* Espacio entre ítems apilados */
     }
   }
 </style>
