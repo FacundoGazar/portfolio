@@ -1,49 +1,39 @@
----
-import ThemeIcon from "./Icons.astro";
----
-
 <head>
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap">
   <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 </head>
 
-<nav class="fixed top-4 right-4 z-50 flex flex-col md:flex-row justify-end items-center">
-  <ul class="flex flex-col md:flex-row gap-4 font-500 text-[#d1d5db]">
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+<nav>
+  <ul>
+    <li style="list-style-type: none;">
       <a
         href="https://www.linkedin.com/in/facugazar"
         target="_blank"
         aria-label="Linkedin"
-        class="flex items-center gap-2"
       >
         <span class="iconify h-6 w-6" data-icon="mdi:linkedin"></span>
-        <span>Linkedin</span>
+        <span class="text">Linkedin</span>
       </a>
     </li>
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+    <li style="list-style-type: none;">
       <a
         href="mailto:facundobarciabarate@gmail.com"
         target="_blank"
         aria-label="Email"
-        class="flex items-center gap-2"
       >
         <span class="iconify h-6 w-6" data-icon="mdi:email"></span>
-        <span>Email</span>
+        <span class="text">Email</span>
       </a>
     </li>
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
+    <li style="list-style-type: none;">
       <a
         href="http://github.com/FacundoGazar"
         target="_blank"
         aria-label="Github"
-        class="flex items-center gap-2"
       >
         <span class="iconify h-6 w-6" data-icon="mdi:github"></span>
-        <span>Github</span>
+        <span class="text">Github</span>
       </a>
-    </li>
-    <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
-      <ThemeIcon />
     </li>
   </ul>
 </nav>
@@ -65,12 +55,15 @@ import ThemeIcon from "./Icons.astro";
 
   ul {
     display: flex;
-    gap: 16px;
+    gap: 1.5rem;
   }
 
   a {
     text-decoration: none;
     font-family: 'General Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   a:link, a:visited {
@@ -80,15 +73,6 @@ import ThemeIcon from "./Icons.astro";
   a:hover {
     color: #d1d5db;
     text-shadow: 0 0 1rem #d1d5db;
-  }
-
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-
-  .gap-2 {
-    gap: 0.5rem;
   }
 
   @media (max-width: 640px) {
@@ -101,7 +85,7 @@ import ThemeIcon from "./Icons.astro";
 
     ul {
       flex-direction: column;
-      align-items: center;
+      align-items:end;
     }
 
     li {
