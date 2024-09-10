@@ -5,7 +5,7 @@
       <div>
         <h1 class="projects-title" style="text-align: center; font-family: General Sans, sans-serif;">Últimos proyectos</h1>
       </div>
-      <a href="#">
+      <a href="#" style="text-decoration: none;">
       <article class="card__article">
         <img src="/img1-1.png" alt="image" class="card__img">
         <div class="card__data">
@@ -33,7 +33,7 @@
         </div>
       </article>
       </a>
-      <a href="#">
+      <a href="#" style="text-decoration: none;">
       <article class="card__article">
         <img src="/img2-1.png" alt="image" class="card__img">
         <div class="card__data">
@@ -52,7 +52,7 @@
         </div>
       </article>
       </a>
-      <a href="#">
+      <a href="#" style="text-decoration: none;">
       <article class="card__article">
         <img src="/img3-1.png" alt="image" class="card__img">
         <div class="card__data">
@@ -82,173 +82,172 @@
 </body>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500&display=swap");
 
-:root {
-  --first-color: hsl(0, 0%, 60%);
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(147, 31%, 94%);
-  --container-color: hsl(256, 100%, 18%);
-  --tag-bg-color: hsl(240, 100%, 30%);
-  --tag-text-color: hsl(0, 0%, 95%);
-  --body-font: "General Sans", sans-serif;
-  --h2-font-size: 1.75rem;
-  --small-font-size: .813rem;
-}
+  :root {
+    --first-color: hsl(0, 0%, 60%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(147, 31%, 94%);
+    --container-color: hsl(256, 100%, 18%);
+    --tag-bg-color: hsl(240, 100%, 30%);
+    --tag-text-color: hsl(0, 0%, 95%);
+    --body-font: "General Sans", sans-serif;
+    --h2-font-size: 1.75rem;
+    --small-font-size: .813rem;
+  }
 
-body {
-  font-family: var(--body-font);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-}
+  body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
 
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
 
-.card__container {
-  display: grid;
-  gap: 2rem;
-  background-color: var(--body-color);
-}
+  .card__container {
+    display: grid;
+    gap: 2rem;
+    background-color: var(--body-color);
+  }
 
-.card__article {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--container-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  gap: 2rem;
-  max-width: 100%; /* Ajustar al 100% del contenedor */
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.card__article:hover {
-  background-color: #5c1ccc;
-}
-
-.card__img {
-  width: 100%; /* Ajuste al 100% para pantallas pequeñas */
-  max-width: 400px; /* Mantener el tamaño máximo en pantallas más grandes */
-  border-radius: 1rem;
-  object-fit: cover;
-  margin: 0 auto;
-}
-
-.card__data {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.card__title {
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
-  margin-bottom: 1rem;
-}
-
-.card__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-}
-
-.tag__blue {
-  background-color: #001aff81;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tag__orange {
-  background-color: #ff480081;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tag__lblue {
-  background-color: #003a6971;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tag__purple {
-  background-color: #b71abd75;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tag__yellow {
-  background-color: #fbff0085;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tag__green {
-  background-color: #00ff0088;
-  color: var(--tag-text-color);
-  font-size: var(--small-font-size);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.card__description {
-  font-size: var(--small-font-size);
-  color: var(--text-color);
-  line-height: 1.5;
-}
-
-/* Media Query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
   .card__article {
-    flex-direction: column;
-    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    gap: 2rem;
+    max-width: 100%;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .card__article:hover {
+    background-color: #5c1ccc;
   }
 
   .card__img {
     width: 100%;
-    max-width: none; /* Remover el tamaño máximo para que se ajuste a la pantalla */
+    max-width: 400px;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin: 0 auto;
   }
 
-  .container {
-    padding: 1rem;
+  .card__data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-}
+
+  .card__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+  }
+
+  .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .tag__blue {
+    background-color: #001aff81;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__orange {
+    background-color: #ff480081;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__lblue {
+    background-color: #003a6971;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__purple {
+    background-color: #b71abd75;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__yellow {
+    background-color: #fbff0085;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__green {
+    background-color: #00ff0088;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card__description {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    line-height: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card__article {
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .card__img {
+      width: 100%;
+      max-width: none;
+    }
+
+    .container {
+      padding: 1rem;
+    }
+  }
 </style>

@@ -14,9 +14,10 @@ import ThemeIcon from "./Icons.astro";
         href="https://www.linkedin.com/in/facugazar"
         target="_blank"
         aria-label="Linkedin"
+        class="flex items-center gap-2"
       >
-        <span class="iconify" data-icon="mdi:linkedin" class="block md:hidden h-6 w-6"></span>
-        <span class="hidden md:block">Linkedin</span>
+        <span class="iconify h-6 w-6" data-icon="mdi:linkedin"></span>
+        <span>Linkedin</span>
       </a>
     </li>
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
@@ -24,15 +25,21 @@ import ThemeIcon from "./Icons.astro";
         href="mailto:facundobarciabarate@gmail.com"
         target="_blank"
         aria-label="Email"
+        class="flex items-center gap-2"
       >
-        <span class="iconify" data-icon="mdi:email" class="block md:hidden h-6 w-6"></span>
-        <span class="hidden md:block">Email</span>
+        <span class="iconify h-6 w-6" data-icon="mdi:email"></span>
+        <span>Email</span>
       </a>
     </li>
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
-      <a href="http://github.com/FacundoGazar" target="_blank" aria-label="Github">
-        <span class="iconify" data-icon="mdi:github" class="block md:hidden h-6 w-6"></span>
-        <span class="hidden md:block">Github</span>
+      <a
+        href="http://github.com/FacundoGazar"
+        target="_blank"
+        aria-label="Github"
+        class="flex items-center gap-2"
+      >
+        <span class="iconify h-6 w-6" data-icon="mdi:github"></span>
+        <span>Github</span>
       </a>
     </li>
     <li class="hover:text-black dark:hover:text-white" style="list-style-type: none;">
@@ -73,6 +80,15 @@ import ThemeIcon from "./Icons.astro";
   a:hover {
     color: #d1d5db;
     text-shadow: 0 0 1rem #d1d5db;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
   }
 
   @media (max-width: 640px) {
