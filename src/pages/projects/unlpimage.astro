@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from "../../components/Navbar.astro";
+import Contact from '../../components/Contact.astro';
+import ProjectPresentationImg from "../../components/ProjectPresentationImg.astro";
+---
+
+<Layout title="García Zárate Facundo Nicolás">
+	<body>
+		<Navbar />
+		<main>
+            <section>
+                <ProjectPresentationImg />
+            </section>
+			<section>
+				<Contact />
+			</section>
+		</main>
+	</body>
+</Layout>
+
+<style>
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+</style>

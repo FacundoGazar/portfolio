@@ -1,0 +1,263 @@
+</head>
+
+<body style="font-family: sans-serif;">
+
+    <div class="container">
+        <h1 class="title">UNLP Image</h1>
+        <p class="subtitle">Aplicación de escritorio para multilpes perfiles con capacidad de etiquetar imágenes, crear distintos tipos de collages, generar memes y visualizar las estadísticas del sistema</p>
+
+        <div class="info">
+            <div class="info-item">
+                <h3>Fecha</h3>
+                <p>Febrero 2023</p>
+            </div>
+            <div class="info-item">
+                <h3>Tecnologías</h3>
+                <div class="card__tags">
+                    <span class="tag__blue">
+                        <span class="iconify" data-icon="logos:python"></span> Python
+                    </span>
+                    <span class="tag__green">
+                        <span class="iconify" data-icon="logos:django"></span> PySimpleGUI
+                    </span>
+                    <span class="tag__yellow">
+                        <span class="iconify" data-icon="logos:json"></span> JSON
+                    </span>
+                    <span class="tag__lblue">
+                        <span class="iconify" data-icon="logos:pandas"></span> Pandas
+                    </span>
+                    <span class="tag__lblue">
+                        <span class="iconify" data-icon="logos:matplotlib"></span> MatplotLib
+                    </span>
+                  </div>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="/img2-1.png" alt="Ferreplus">
+        </div>
+
+        <div class="text-container">
+            <div>
+                <h1 class="title-two">Objetivo</h1>
+                <p>Proyecto grupal propuesto por la materia de Seminario de Lenguajes por la Facultad de Informática de la UNLP, con la finalidad de desarrollar una aplicación integral que abarque tanto el backend como el frontend. Se puso especial atención al aprendizaje de Python, Pandas, MatplotLib, JSON y al trabajo en equipo utilizando herramientas de control de versiones.</p>
+            </div>
+                <h1 class="title-two">Fotos de las funciones principales</h1>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-1.png' alt='inicio' />
+                        <figcaption>Registrar usuario</figcaption>
+                    </figure>
+                </div>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-2.png' alt='inicio' />
+                        <figcaption>Etiquetado de imágenes</figcaption>
+                    </figure>
+                </div>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-3.png' alt='inicio' />
+                        <figcaption>Generador de memes</figcaption>
+                    </figure>
+                </div>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-4.png' alt='inicio' />
+                        <figcaption>Vista previa del meme</figcaption>
+                    </figure>
+                </div>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-5.png' alt='inicio' />
+                        <figcaption>Selección del diseño para el collage</figcaption>
+                    </figure>
+                </div>
+                <div class="image-section">
+                    <figure>
+                        <img src='/img2-6.png' alt='inicio' />
+                        <figcaption>Vista previa del collage</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<style>
+    body {
+        font-family: 'General Sans', sans-serif;
+        background-color: #121212;
+        color: #d1d5db;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        padding: 80px 0;
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .title-two {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        color: #9CA3AF;
+        margin-top: 10px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .info-item {
+        text-align: center;
+    }
+
+    .info-item h3 {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .info-item p,
+    .info-item a {
+        font-size: 1rem;
+        color: #9CA3AF;
+    }
+
+    .buttons {
+        margin-top: 30px;
+    }
+
+    .button {
+        padding: 15px 30px;
+        font-size: 1.25rem;
+        color: #ffffff;
+        background-color: #3B82F6;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: #2563EB;
+    }
+
+    .image-section {
+        margin-top: 50px;
+    }
+
+    .image-section img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .tag__blue {
+    background-color: #001aff81;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__orange {
+    background-color: #ff480081;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__lblue {
+    background-color: #003a6971;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__purple {
+    background-color: #b71abd75;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__yellow {
+    background-color: #fbff0085;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__green {
+    background-color: #00ff0088;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  figcaption {
+    margin: 10px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+</style>
