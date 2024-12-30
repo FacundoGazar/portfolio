@@ -5,6 +5,34 @@
       <div>
         <h1 class="projects-title" style="text-align: center; font-family: General Sans, sans-serif;">Últimos proyectos</h1>
       </div>
+      <a href="/projects/cedica" style="text-decoration: none;">
+        <article class="card__article">
+          <img src="/img4-1.png" alt="image" class="card__img">
+          <div class="card__data">
+            <div class="card__tags">
+              <span class="tag__blue">
+                <span class="iconify" data-icon="logos:python"></span> Python
+              </span>
+              <span class="tag__white">
+                <span class="iconify" data-icon="logos:flask"></span> Flask
+              </span>
+              <span class="tag__lblue">
+                <span class="iconify" data-icon="logos:matplotlib"></span> MatplotLib
+              </span>
+              <span class="tag__orange">
+                <span class="iconify" data-icon="logos:html-5"></span> HTML5
+              </span>
+              <span class="tag__purple">
+                <span class="iconify" data-icon="logos:bootstrap"></span> Bootstrap
+              </span>
+            </div>
+            <h2 class="card__title">CEDICA</h2>
+            <span class="card__description">
+              Sistema de administración y portal público.
+            </span>
+          </div>
+        </article>
+      </a>
       <a href="/projects/ferreplus" style="text-decoration: none;">
       <article class="card__article">
         <img src="/img1-1.png" alt="image" class="card__img">
@@ -228,6 +256,17 @@
 
   .tag__green {
     background-color: #00ff0088;
+    color: var(--tag-text-color);
+    font-size: var(--small-font-size);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag__white {
+    background-color: #9595b388;
     color: var(--tag-text-color);
     font-size: var(--small-font-size);
     padding: 0.25rem 0.75rem;
